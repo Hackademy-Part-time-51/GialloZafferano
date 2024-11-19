@@ -34,18 +34,27 @@
         font-style: normal;
       }
 
-      .navbar-brand{
-        position: absolute;
-        left: 10px;
-        top: 4px;
+    
+      .navbar-toggler {
+        margin-left: auto;
       }
-      .nav-item_Menu{
-        display: flex;
-        position: absolute;
-        left: 100px;
+      .nav-item{
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 400;
+        font-style: normal;
+  
+      }
+      .nav-item:hover{
+          background-color: rgb(211, 194, 194);
+          border-radius: 5px; 
       }
 
-
+      .form-inline{
+        font-size: 12px;
+        font-family: "Montserrat", serif;
+        padding: 6px; 
+      }
+      
       p{
         text-align: center;
         text-align: justify;
@@ -53,7 +62,6 @@
       }
       h1{
         font-size: 90PX;
-        color: rgba(70, 35, 3, 0.774);
         margin-top: 130px;
       }
       @media (min-width: 376px) and (max-width: 1400px){
@@ -62,7 +70,7 @@
         }
       }
 
-      h1, h2{
+      h1, h2, h3{
         text-align:center;
         color: rgba(70, 35, 3, 0.774);
       
@@ -92,3 +100,51 @@
       height: 200px;
       object-fit: cover;
     }
+
+    .carousel img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+/* FAQ */
+
+.accordion-item{
+  width: 65%;
+  text-align: center;
+  background-color: rgb(252, 252, 252);
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 16px;
+ 
+}
+    .accordion-button {
+      background-color: transparent; 
+      color: rgb(85, 77, 66);
+      font-weight: 400;
+      font-family:"Montserrat", serif;
+      border: 1px solid #cdd4db;
+      
+  }
+  
+  .accordion-button:focus {
+      box-shadow: none; /* Rimuove l'outline quando si fa clic */
+  }
+
+  .accordion-button:hover {
+    background-color: rgb(211, 194, 194);
+    color:rgb(53, 41, 26)
+  }
+  .accordion-body {
+      background-color: transparent; 
+      font-size: 14px;
+      width: 1000px;
+    
+      
+  }
+  h3{
+    margin-top: 10px;
+    text-align: left;
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
